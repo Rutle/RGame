@@ -1,0 +1,12 @@
+// MonsterTypes
+// Type 	; Attackable	; Behaviour	; Body	; Container	; Destroyable	; Pickup
+Beast		; yes			; yes		; yes	; no		; yes			; no
+Dragon		; yes			; yes		; yes	; no		; yes			; no
+Elemental	; yes			; yes		; yes	; no		; yes			; no
+Humanoid	; yes			; yes		; yes	; no		; yes			; no
+Undead		; yes			; yes		; yes	; no		; yes			; no
+Demon		; yes			; yes		; yes	; no		; yes			; no
+// Corpses
+// Scrolls
+// Books
+// Items

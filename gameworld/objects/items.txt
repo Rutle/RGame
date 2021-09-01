@@ -1,0 +1,3 @@
+// Items
+// Name					; Type			; Voisi olla joku componentin type nimi tai sitten kompinaatio eri componentteja
+Scroll of Strength		; Scroll

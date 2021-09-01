@@ -1,0 +1,12 @@
+// Name			; Race 	; Type		; Character ; Color		; Bodytype	; Hostility ; Stats(str, dex, con, wis) ; 
+Troll			; Troll	; Humanoid	; T			; green		; head		; hostile	; 1	; 2	; 3	; 4
+Human			; Human	; Humanoid	; H			; white		; head 		; neutral	; 1	; 2	; 3	; 4
+Orc				; Orc	; Humanoid	; o			; green		; head 		; hostile	; 1	; 2	; 3	; 4
+Dwarf			; Dwarf	; Humanoid	; D			; brown		; head 		; hostile	; 1	; 2	; 3	; 4
+Elf				; Elf	; Humanoid	; e 		; green		; head		; hostile	; 1	; 2	; 3	; 4
+Gnome			; Gnome	; Humanoid	; G			; blue		; head 		; hostile	; 1	; 2	; 3	; 4
+Ogre			; Ogre	; Humanoid	; O 		; grey		; head	 	; hostile	; 1	; 2	; 3	; 4
+Satyr			; Satyr	; Humanoid	; S			; red		; head 		; hostile	; 1	; 2	; 3	; 4
+
+
+// Varied monsters

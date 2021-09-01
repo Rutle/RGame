@@ -1,0 +1,10 @@
+// Tiles
+// ID				; Name						; Type		; walkable		; ASCII-code	; Description
+Wall				; Wall						; Base		; no			; 35			; N/A
+Floor				; Floor						; Base		; yes			; 46			; N/A
+ThinNWCornerWall	; Northwest Corner Wall		; Thin		; no			; 218			; N/A
+ThinNECornerWall	; Northeast Corner Wall		; Thin		; no			; 178			; N/A
+ThinSWCornerWall	; Southwest Corner Wall		; Thin		; no			; 192			; N/A
+ThinSECornerWall	; Southeast Corner Wall		; Thin		; no			; 217			; N/A
+ThinNSWall			; North-South Wall			; Thin		; no			; 179	 		; N/A
+ThinWEWall			; West-East Wall			; Thin		; no			; 196			; N/A
