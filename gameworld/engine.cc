@@ -66,14 +66,14 @@ void Engine::render() {
         map_->render();
 
         // 3. draw gameobjects (player, monsters and items etc.)
-        //player_->render();
-        /*
+        player_->render();
+
         for ( auto obj : generatedData_.at(map_->getCurrentMapIndex()) ) {
             if ( obj != player_ && (isInFov(obj->getX(), obj->getY()))) {
                 obj->render();
             }
         }
-        */
+
         // 4. Draw rest of the GUI here or at the beginning.
     }
 
@@ -239,7 +239,6 @@ void Engine::run()
 {
     // GameWorld gameloop:
     while ( gameState_ != EXIT_GAME ) {
-
         checkInput();
         update();
         render();

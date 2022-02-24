@@ -9,10 +9,10 @@ DataLoader::DataLoader()
 
 bool DataLoader::init()
 {
-    readData(DataType::TILE);
-    readData(DataType::ITEM);
-    readData(DataType::MONSTER);
-    readData(DataType::OBJECTTYPE);
+    if (readData(DataType::TILE) && readData(DataType::ITEM) && readData(DataType::MONSTER) && readData(DataType::OBJECTTYPE)) {
+        return true;
+    }
+    return false;
 }
 
 std::map<std::string, std::vector<Monster> > &DataLoader::getMonsterData()
@@ -60,10 +60,10 @@ bool DataLoader::readData(DataType typeToLoad)
 
 bool DataLoader::readTileData()
 {
-    std::ifstream file{"gameworld/objects/tiles.txt"};
+    std::ifstream file{"./gameworld/objects/tiles.txt"};
 
     if ( !file.is_open() ) {
-        std::cout << "Failed to open file!" << std::endl;
+        std::cout << "<TileData>Failed to open file!" << std::endl;
         return false;
     }
     std::string item;
@@ -116,7 +116,7 @@ bool DataLoader::readItemData()
 {
     std::ifstream file{"gameworld/objects/items.txt"};
     if ( !file.is_open() ) {
-        std::cout << "Failed to open file!" << std::endl;
+        std::cout << "<ItemData>Failed to open file!" << std::endl;
         return false;
     }
 
@@ -163,7 +163,7 @@ bool DataLoader::readObjectTypeData()
 
     std::ifstream file{"gameworld/objects/types.txt"};
     if ( !file.is_open() ) {
-        std::cout << "Failed to open file!" << std::endl;
+        std::cout << "<ObjectTypeData>Failed to open file!" << std::endl;
         return false;
     }
 
@@ -207,7 +207,7 @@ bool DataLoader::readMonsterData()
 {
     std::ifstream file{"gameworld/objects/monsters.txt"};
     if ( !file.is_open() ) {
-        std::cout << "Failed to open file!" << std::endl;
+        std::cout << "<MonsterData>Failed to open file!" << std::endl;
         return false;
     }
 

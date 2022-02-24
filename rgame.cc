@@ -12,7 +12,7 @@ RGame::RGame(int width, int height) :
     width_{width}, height_{height}, gameMenu_{nullptr}, charCreation_{nullptr},
     gameEngine_{nullptr}, gameState_{GAME_MENU}
 {
-    // initGame();
+    initGame();
 
 }
 
@@ -30,8 +30,11 @@ int RGame::run(bool gameWorldTest)
             } else if ( gameState_ == CHAR_CREATION ) {
                 charCreation_->init();
                 charCreation_->run();
+                // Add action to char creation to complete it and enter the world.
             } else if ( gameState_ == GAME_WORLD ) {
+                // Pass char creation data to gameEngine.
                 // engine->run(*this)
+                // gameEngine_->run();
             }
         }
     }

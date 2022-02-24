@@ -27,11 +27,11 @@ SOURCES += main.cc \
     gameworld/rdata.cc \
     gameworld/monsterbehaviour.cc
 
-win32: LIBS += -L$$PWD/lib/ -lBearLibTerminal
 
-INCLUDEPATH += $$PWD/include \
-    $$PWD/components \
-    $$PWD/gameworld
+INCLUDEPATH += $$PWD/include $$PWD/components $$PWD/gameworld
+
+# LIBS += -L$$PWD/lib -lBearLibTerminal
+LIBS += $$PWD/lib/BearLibTerminal.dll
 
 DEPENDPATH += $$PWD/include
 
@@ -65,3 +65,6 @@ HEADERS += \
     gameworld/rgameobjectfactory.hh \
     gameworld/rdata.hh \
     gameworld/monsterbehaviour.hh
+
+DISTFILES += \
+    lib/BearLibTerminal.dll

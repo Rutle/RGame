@@ -27,7 +27,7 @@ RWorldGenerator::RWorldGenerator(DataLoader loader,
     dFactory_ = std::unique_ptr<RDungeonFactory>(new RDungeonFactory{dfactory});
     gFactory_->setData(loader_);
     dFactory_->setData(loader_);
-    loader_->init();
+    // loader_->init();
     engine_ = engine;
 }
 
@@ -56,7 +56,7 @@ void RWorldGenerator::populateDungeon(const std::shared_ptr<DungeonMap> &map,
                                         int monsterLvl, int maxObjects,
                                         bool items, bool monsters)
 {
-    unsigned int roomCount{map->getRooms().size()};
+    // unsigned int roomCount{map->getRooms().size()};
 
     std::map<std::pair<int, int>, bool> checkList_;
     srand(map->getSeed());
